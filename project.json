@@ -1,0 +1,30 @@
+﻿{
+  "name": "XpNet",
+  "version": "1.0.0",
+  "title": "XpNet Xml parser",
+  "description": "Xml Parser",
+  "language": "en-US",
+  "authors": [
+    "AG-Software"
+  ],
+  "copyright": "Copyright © Alexander Gnauck, AG-Software",
+
+  "dependencies": {
+
+  },
+
+  "frameworks": {
+    "netstandard1.3": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    },
+    "net451": {}
+  },
+
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration Release"
+    ]
+  }
+}
